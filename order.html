@@ -122,15 +122,15 @@ Author URL: http://w3layouts.com
             <div class="form-41-mian mt-5 pt-lg-5 pt-md-4">
                 <div class="container">
                     <div class="form-inner-cont">
-                        <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+                        <form action="" method="post" class="signin-form" name="contact-form">
                             <div class="row align-form-map">
                                 <div class="col-sm-6 form-input">
                                     <label for="w3lName">Name</label>
-                                    <input type="text" name="w3lName" id="w3lName" placeholder="" />
+                                    <input type="text" name="customername" id="w3lName" placeholder="" />
                                 </div>
                                 <div class="col-sm-6 form-input">
                                     <label for="w3lSendder">Quantity</label>
-                                    <select name="" id="" style="text-align: center;">
+                                    <select name="quantity" id="" style="text-align: center;">
                                         <option value="" selected>Quantity</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -146,16 +146,16 @@ Author URL: http://w3layouts.com
                                 </div>
                                 <div class="col-sm-6 form-input">
                                     <label for="w3lName">Contact Number</label>
-                                    <input type="text" name="contact" id="contact" placeholder="" />
+                                    <input type="text" name="contactnumber" id="contactnumber" placeholder="" />
                                 </div>
                                 <div class="col-sm-6 form-input">
                                     <label for="w3lName">Time of Delivery</label>
-                                    <input type="time" name="time" id="time" placeholder="Time of Delivery" style="text-align: center;"/>
+                                    <input type="time" name="deliverytime" id="deliverytime" placeholder="Time of Delivery" style="text-align: center;"/>
                                 </div>
                             </div>
                             <div class="form-input">
                                 <label for="w3lMessage">Address*</label>
-                                <textarea placeholder="" name="w3lMessage" id="w3lMessage" required=""></textarea>
+                                <textarea placeholder="" name="address" id="address" required=""></textarea>
                             </div>
                             <div class="submit text-right">
                                 <button type="submit" class="btn btn-style-white btn-style-primary">Submit
@@ -254,6 +254,7 @@ Author URL: http://w3layouts.com
     </footer>
     <!-- //footer -->
 
+    <script src="./DataStore/ordergooglesheet.js"></script>
     <!-- Js scripts -->
     <!-- move top -->
     <button onclick="topFunction()" id="movetop" title="Go to top">
