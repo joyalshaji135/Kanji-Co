@@ -425,8 +425,8 @@
                     </div>
                     <div class="address-grid col-lg-4 col-md-6 col-sm-7 mt-lg-0 mt-sm-5 mt-4 w3l-footer-16-main">
                         <h5>Subscribe Here</h5>
-                        <form action="#" class="subscribe d-flex mt-4 pt-lg-2 mb-4" method="post">
-                            <input type="email" name="email" placeholder="Email Address" required="">
+                        <form action="" class="subscribe d-flex mt-4 pt-lg-2 mb-4" method="post" name="email-submit">
+                            <input type="email" name="useremail" placeholder="Email Address" required="">
                             <button><span class="fa fa-paper-plane" aria-hidden="true"></span></button>
                         </form>
                         <p>Subscribe to our mailing list and get updates to your email inbox.</p>
@@ -454,6 +454,7 @@
     </footer>
     <!-- //footer -->
 
+    <script src="./DataStore/emailupdategooglesheet.js"></script>
     <!-- Js scripts -->
     <!-- move top -->
     <button onclick="topFunction()" id="movetop" title="Go to top">

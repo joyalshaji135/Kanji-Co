@@ -150,28 +150,28 @@ Author URL: http://w3layouts.com
             <div class="form-41-mian mt-5 pt-lg-5 pt-md-4">
                 <div class="container">
                     <div class="form-inner-cont">
-                        <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+                        <form action="" method="post" class="signin-form" name="contact-submit">
                             <div class="row align-form-map">
                                 <div class="col-sm-6 form-input">
                                     <label for="w3lName">Name</label>
-                                    <input type="text" name="w3lName" id="w3lName" placeholder="" />
+                                    <input type="text" name="customername" id="w3lName" placeholder="" />
                                 </div>
                                 <div class="col-sm-6 form-input">
                                     <label for="w3lSender">Email(Required)*</label>
-                                    <input type="email" name="w3lSender" id="w3lSender" placeholder="" required="" />
+                                    <input type="email" name="customeremail" id="w3lSender" placeholder="" required="" />
                                 </div>
                                 <div class="col-sm-6 form-input">
                                     <label for="w3lSender">Subject*</label>
-                                    <input type="text" name="w3lSubect" placeholder="" class="contact-input">
+                                    <input type="text" name="subject" placeholder="" class="contact-input">
                                 </div>
                                 <div class="col-sm-6 form-input">
                                     <label for="w3lSender">Phone Number*</label>
-                                    <input type="number" name="w3lPhone" placeholder="" class="contact-input">
+                                    <input type="number" name="customerphone" placeholder="" class="contact-input">
                                 </div>
                             </div>
                             <div class="form-input">
                                 <label for="w3lMessage">Message(Required)*</label>
-                                <textarea placeholder="" name="w3lMessage" id="w3lMessage" required=""></textarea>
+                                <textarea placeholder="" name="customermessage" id="w3lMessage" required=""></textarea>
                             </div>
                             <div class="submit text-right">
                                 <button type="submit" class="btn btn-style-white btn-style-primary">Submit
@@ -270,8 +270,8 @@ Author URL: http://w3layouts.com
     </div>
 </footer>
 <!-- //footer -->
-
-    <!-- Js scripts -->
+<script src="./DataStore/contactgooglesheet.js"></script> 
+<!-- Js scripts -->
     <!-- move top -->
     <button onclick="topFunction()" id="movetop" title="Go to top">
         <span class="fa fa-level-up" aria-hidden="true"></span>
