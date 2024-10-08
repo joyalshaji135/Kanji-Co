@@ -2233,8 +2233,8 @@ pre code {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
+  color: #121315;
+  background-color: #8f3939;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
@@ -16983,6 +16983,7 @@ button.owl-next {
 }
 
 .form-inner-cont input,
+.form-inner-cont select,
 .form-inner-cont textarea {
   outline: none;
   width: 100%;
