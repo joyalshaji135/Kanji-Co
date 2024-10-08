@@ -122,25 +122,25 @@ Author URL: http://w3layouts.com
             <div class="form-41-mian mt-5 pt-lg-5 pt-md-4">
                 <div class="container">
                     <div class="form-inner-cont">
-                        <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+                        <form action="" method="post" class="signin-form" name="contact-form">
                             <div class="row align-form-map">
                                 <div class="col-sm-6 form-input">
                                     <label for="w3lName">Name</label>
-                                    <input type="text" name="w3lName" id="w3lName" placeholder="" />
+                                    <input type="text" name="customername" id="w3lName" placeholder="" />
                                 </div>
                                 <div class="col-sm-6 form-input">
                                     <label for="w3lSendder">Opinion</label>
-                                    <select name="" id="" style="text-align: center;">
-                                        <option value="" selected>Opinion</option>
-                                        <option value="">Good</option>
-                                        <option value="">Bad</option>
-                                        <option value="">Average</option>
+                                    <select name="opinion" id="opinion" style="text-align: center;">
+                                        <option value="opinion" selected>Opinion</option>
+                                        <option value="Good">Good</option>
+                                        <option value="Bad">Bad</option>
+                                        <option value="Average">Average</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="form-input">
                                 <label for="w3lMessage">Message(Required)*</label>
-                                <textarea placeholder="" name="w3lMessage" id="w3lMessage" required=""></textarea>
+                                <textarea placeholder="" name="feedback" id="w3lMessage" required=""></textarea>
                             </div>
                             <div class="submit text-right">
                                 <button type="submit" class="btn btn-style-white btn-style-primary">Submit
@@ -239,6 +239,7 @@ Author URL: http://w3layouts.com
     </footer>
     <!-- //footer -->
 
+    <script src="./DataStore/feedbackgooglesheet.js"></script>
     <!-- Js scripts -->
     <!-- move top -->
     <button onclick="topFunction()" id="movetop" title="Go to top">
